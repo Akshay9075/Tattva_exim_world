@@ -1,0 +1,11 @@
+﻿<html><body style="margin:0"><iframe id="f" style="width:375px;height:900px;border:0" src="http://127.0.0.1:5174/index.html"></iframe><script>
+const f=document.getElementById("f");
+f.onload=()=>{
+  try{
+    const d=f.contentDocument;
+    const sw=d.documentElement.scrollWidth, cw=d.documentElement.clientWidth;
+    const h1=d.querySelector("h1");
+    document.title=JSON.stringify({sw,cw,overflow:sw>cw+2,h1w:h1&&h1.getBoundingClientRect().width,body:d.body.innerText.slice(0,80)});
+  }catch(e){document.title=String(e)}
+};
+</script></body></html>
