@@ -44,41 +44,54 @@
             </div>
           </div>
 
-          <form id="inquiryForm">
-  <div class="row g-3">
-    <div class="col-md-6">
-      <label for="name" class="form-label">Full Name</label>
-      <input id="name" type="text" class="form-control" placeholder="Your name" required>
-    </div>
+         <div class="col-lg-7 reveal">
+  <div class="premium-panel">
+    <h3 class="mb-3">Inquiry Form</h3>
 
-    <div class="col-md-6">
-      <label for="company" class="form-label">Company</label>
-      <input id="company" type="text" class="form-control" placeholder="Company name" required>
-    </div>
+    <form id="inquiryForm">
+      <div class="row g-3">
 
-    <div class="col-md-6">
-      <label for="email" class="form-label">Email</label>
-      <input id="email" type="email" class="form-control" placeholder="name@example.com" required>
-    </div>
+        <div class="col-md-6">
+          <label for="name" class="form-label">Full Name</label>
+          <input id="name" type="text" class="form-control"
+                 placeholder="Your name" required>
+        </div>
 
-    <div class="col-md-6">
-      <label for="phone" class="form-label">Phone</label>
-      <input id="phone" type="tel" class="form-control" placeholder="+91" required>
-    </div>
+        <div class="col-md-6">
+          <label for="company" class="form-label">Company</label>
+          <input id="company" type="text" class="form-control"
+                 placeholder="Company name" required>
+        </div>
 
-    <div class="col-12">
-      <label for="message" class="form-label">Requirement</label>
-      <textarea id="message" class="form-control" rows="5"
-        placeholder="Share product type, quantity, and target market" required></textarea>
-    </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" type="email" class="form-control"
+                 placeholder="name@example.com" required>
+        </div>
 
-    <div class="col-12">
-      <button type="submit" class="btn btn-gold">
-        Submit Inquiry
-      </button>
-    </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone</label>
+          <input id="phone" type="tel" class="form-control"
+                 placeholder="+91" required>
+        </div>
+
+        <div class="col-12">
+          <label for="message" class="form-label">Requirement</label>
+          <textarea id="message" class="form-control" rows="5"
+                    placeholder="Share product type, quantity, and target market"
+                    required></textarea>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-gold">
+            Submit Inquiry
+          </button>
+        </div>
+
+      </div>
+    </form>
   </div>
-</form>
+</div>
 
 <script>
 document.getElementById("inquiryForm").addEventListener("submit", function(e) {
